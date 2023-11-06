@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo img {
+  width: 200px;
+  height: 100px;
+}
+
+.logo h1 {
+  margin-left: 10px;
+}
+
+.logo a:link,
+.logo a:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex; /* 가로로 배열하기 */
+}
+
+nav ul li {
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s; /* 색상 전환 효과 추가 */
+  font-size: 20px;
+  padding: 10px;
+}
+
+.mainpic {
+  max-width: 500px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li a:hover {
+  color: #eadbdb; /* 호버 시 보라색 대신 검은색으로 변경 */
+}
+
+#intro {
+  text-align: center;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh; /* 화면 높이의 100%로 설정 */
+}
+
+#intro h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+#slider {
+  width: 600px;
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+  max-height: 400px;
+  display: flex;
+  justify-content: center; /* 가로 가운데 정렬 */
+  align-items: center; /* 세로 가운데 정렬 */
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지의 비율 유지 및 가득 채우기 */
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background: rgba(255, 255, 255, 0.5); /* 버튼 배경색 */
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  padding: 10px 20px;
+}
+
+.slider-btn:hover {
+  background: rgba(255, 255, 255, 0.7); /* 호버 시 배경색 변경 */
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+#intro p {
+  font-size: 18px;
+  color: #666;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
